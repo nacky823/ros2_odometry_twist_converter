@@ -29,7 +29,12 @@ endif()
 add_executable(odometry_twist_converter src/core.cpp)
 ament_target_dependencies(odometry_twist_converter rclcpp nav_msgs geometry_msgs)
 
-install(TARGETS odometry_twist_converter
+add_executable(twist_to_twist_with_cov src/twist.cpp)
+ament_target_dependencies(twist_to_twist_with_cov rclcpp geometry_msgs)
+
+install(TARGETS
+  odometry_twist_converter
+  twist_to_twist_with_cov
   DESTINATION lib/${PROJECT_NAME}
 )
 
