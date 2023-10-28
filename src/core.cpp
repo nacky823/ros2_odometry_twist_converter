@@ -18,6 +18,7 @@ private:
   {
     geometry_msgs::msg::TwistWithCovarianceStamped twist_msg;
     twist_msg.header = msg->header;
+    twist_msg.header.frame_id = "base_link";
     twist_msg.twist.twist.linear = msg->twist.twist.linear;
     twist_msg.twist.twist.angular = msg->twist.twist.angular;
     publisher_->publish(twist_msg);
