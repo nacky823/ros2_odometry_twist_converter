@@ -9,7 +9,7 @@ public:
   : Node("odometry_twist_converter")
   {
     subscription_ = this->create_subscription<nav_msgs::msg::Odometry>(
-      "odom", 10, std::bind(&OdometryTwistConverter::callback, this, std::placeholders::_1));
+      "mugimaru_odom", 10, std::bind(&OdometryTwistConverter::callback, this, std::placeholders::_1));
     publisher_ = this->create_publisher<geometry_msgs::msg::TwistWithCovarianceStamped>("mugimaru_twist", 10);
   }
 
