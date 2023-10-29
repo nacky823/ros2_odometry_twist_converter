@@ -7,7 +7,7 @@ from launch_ros.actions import SetParameter
 
 
 def launch_setup(context, *args, **kwargs):
-    set_use_sim_time = SetParameter(name="use_sim_time", value="false")
+    set_use_sim_time = SetParameter(name="use_sim_time", value="true")
     return [set_use_sim_time]
 
 def generate_launch_description():
