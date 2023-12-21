@@ -42,7 +42,8 @@ def generate_launch_description():
         name = "odom_to_twist_cov_stamp",
         output = "screen",
         remappings = [
-            ("mugimaru_odom", "odom"),
+            ("input_odom", "odom"),
+            ("output_twist", "odom/twist_with_cov_stamp"),
         ],
         parameters = [params_file],
     )

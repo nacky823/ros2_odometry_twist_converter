@@ -11,8 +11,8 @@ ROS 2 Topic の Message type を `nav_msgs/msg/odometry` から `geometry_msgs/m
 
 | **Topic** | **Type** | **Description** |
 | --- | --- | --- |
-| `/input_odom` | `nav_msgs/msg/odometry` | Input odometry |
-| `/output_twist_with_cov_stamp` | `geometry_msgs/msg/twist_with_covariance_stamped` | Output twist_with_cov |
+| `/odom` | `nav_msgs/msg/odometry` | Input odometry |
+| `/odom/twist_with_cov_stamp` | `geometry_msgs/msg/twist_with_covariance_stamped` | Output twist_with_cov |
 
 ## Usage
 
