@@ -33,7 +33,7 @@ def generate_launch_description():
     params_file = os.path.join(
         get_package_share_directory(pkg),
         "config",
-        "odom_to_twist_cov_stamp.param.yaml",
+        "mugimaru_sim.param.yaml",
     )
 
     ndt_node = Node(
